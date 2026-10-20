@@ -400,8 +400,11 @@
       gap: 16px;
       flex-wrap: wrap;
     }
-    .footer-logo img { height: 28px; width: auto; filter: brightness(0) invert(1); }
+    .footer-logo img { height: 28px; width: auto; }
     .footer-copy { font-size: 0.8rem; color: rgba(255,255,255,0.45); }
+    .footer-links { display: flex; gap: 20px; flex-wrap: wrap; }
+    .footer-links a { font-size: 0.8rem; color: rgba(255,255,255,0.7); transition: color 0.15s; }
+    .footer-links a:hover { color: var(--orange); }
 
     /* ── RESPONSIVE ──────────────────────────────────────── */
     @media (max-width: 800px) {
@@ -426,7 +429,7 @@
       <a class="nav-logo" href="#">
         <img src="amaze-logo.jpg" alt="Amaze Innovative Solutions" />
       </a>
-      <a class="nav-cta" href="mailto:george@amaze.today">Get in touch</a>
+      <a class="nav-cta" href="mailto:sales@amaze.today">Get in touch</a>
     </div>
   </nav>
 
@@ -448,7 +451,7 @@
           understanding to transform ambitious ideas into sustainable businesses.
         </p>
         <div class="hero-actions">
-          <a class="btn-primary" href="mailto:george@amaze.today">
+          <a class="btn-primary" href="mailto:sales@amaze.today">
             Start a conversation
             <svg width="14" height="14" viewBox="0 0 14 14" fill="none"><path d="M2 7h10M7 2l5 5-5 5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
           </a>
@@ -558,7 +561,7 @@
             </div>
             <div class="contact-item-text">
               <span class="contact-item-label">Email</span>
-              <span class="contact-item-value"><a href="mailto:george@amaze.today">george@amaze.today</a></span>
+              <span class="contact-item-value"><a href="mailto:sales@amaze.today">sales@amaze.today</a></span>
             </div>
           </div>
           
@@ -569,6 +572,16 @@
             <div class="contact-item-text">
               <span class="contact-item-label">Location</span>
               <span class="contact-item-value">Spaces, Ag. Konstantinou 59–61, 15124 Marousi, Athens</span>
+            </div>
+          </div>
+
+          <div class="contact-item">
+            <div class="contact-item-icon">
+              <svg width="17" height="17" viewBox="0 0 17 17" fill="none"><path d="M3 3.5h11M3 6.5h11M3 9.5v5l5.5-3 5.5 3v-5H3z" stroke="currentColor" stroke-width="1.4" stroke-linejoin="round"/></svg>
+            </div>
+            <div class="contact-item-text">
+              <span class="contact-item-label">Insights &amp; Network</span>
+              <span class="contact-item-value"><a href="https://substack.com/@georgekatiniotis" target="_blank" rel="noopener">Substack</a> · <a href="https://www.linkedin.com/in/georgekatiniotis/" target="_blank" rel="noopener">LinkedIn</a></span>
             </div>
           </div>
         </div>
@@ -588,7 +601,12 @@
   <footer>
     <div class="container footer-inner">
       <div class="footer-logo">
-        <img src="amaze-logo.jpg" alt="Amaze Innovative Solutions" />
+        <img src="amaze-logo-footer.png" alt="Amaze Innovative Solutions" />
+      </div>
+      <div class="footer-links">
+        <a href="https://substack.com/@georgekatiniotis" target="_blank" rel="noopener">Substack</a>
+        <a href="https://www.linkedin.com/in/georgekatiniotis/" target="_blank" rel="noopener">LinkedIn</a>
+        <a href="mailto:sales@amaze.today">sales@amaze.today</a>
       </div>
       <span class="footer-copy">© 2018-2026 Amaze Innovative Solutions. All rights reserved.</span>
     </div>
